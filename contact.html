@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>villa-services</title>
+
+    <!--bootstrap css stylesheet-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!--custom css stylesheet-->
+    <link rel="stylesheet" href="./project.css" />
+  </head>
+  <body>
+    <div class="container main d-flex pt-4">
+      <p><i class="bi bi-envelope-fill text-danger"></i> info@gmail.com|</p>
+      <p>
+        <i class="bi bi-map-fill text-danger"></i> Sunny Isles Beach, FL 33160
+      </p>
+      <!-- social media icons ms-auto helps to arrange properly -->
+      <div class="ms-auto social-icons">
+        <button type="button" class="btn btn-secondary rounded-circle">
+          <i class="bi bi-facebook"></i>
+        </button>
+        <button type="button" class="btn btn-secondary rounded-circle">
+          <i class="bi bi-twitter"></i>
+        </button>
+        <button type="button" class="btn btn-secondary rounded-circle">
+          <i class="bi bi-linkedin"></i>
+        </button>
+        <button type="button" class="btn btn-secondary rounded-circle">
+          <i class="bi bi-instagram"></i>
+        </button>
+      </div>
+    </div>
+    <hr />
+    <!--navbar section-->
+    <nav class="navbar navbar-expand-lg pb-5 pt-3">
+      <div class="container">
+        <a class="navbar-brand" href="./Home.html">VILLA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-2 me-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./Home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./properties.html">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./property-details.html"
+                >Property Details</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <li>
+              <button class="btn btn-dark p-2">
+                <i
+                  class="bi bi-calendar-fill Schedule p-2 me-3 bg-danger text-white rounded-circle"
+                ></i>
+                Schedule a visit
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--navbar section ends-->
+    <div class="container-fluid">
+      <img
+        src="./images/page-heading-bg.jpg"
+        class="img-fluid w-100 object-fit-cover"
+        alt="Page Heading"
+      />
+      <!-- bg properties & 1 as used as styling for position -->
+      <span class="bg-properties-1">Home/contact-us</span>
+      <div class="bg-properties">
+        <h1>contact us</h1>
+      </div>
+    </div>
+    <!--contact section-->
+    <div class="container">
+      <div class="row mt-5">
+        <!-- Left Side: Contact Info & Cards -->
+        <div class="col-md-6">
+          <small class="text-danger">|Contact Us</small>
+          <h2 class="mt-2">Get in Touch<br />With Our Agents</h2>
+          <p class="mt-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+            voluptates illum autem, aliquid ipsam molestiae quaerat molestias
+            delectus, beatae pariatur cum! Reiciendis consequuntur iste commodi
+            in nemo facere architecto officia.
+          </p>
+          <div class="d-flex flex-column gap-3">
+            <div class="card-contact">
+              <div class="card-body">
+                <span><b>010-023-0456</b><br />Phone Number</span>
+              </div>
+            </div>
+            <div class="card-contact">
+              <div class="card-body">
+                <span><b>info@villa.com</b><br />Email Address</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Side: Contact Form -->
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.843912203767!2d-80.12135612455047!3d25.95247787723254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1ste!2sin!4v1755452419084!5m2!1ste!2sin"
+        class="map mt-5"
+        height="400px"
+        width="100%"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="container">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mt-5">
+          <li class="page-item">
+            <a
+              class="page-link"
+              href="./Home.html"
+              target="_self"
+              aria-label="Previous"
+            >
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./Home.html">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./Properties.html">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./Property-Details.html">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="./Home.html" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--footer section-->
+    <footer class="text-center">
+      <small>© 2023 Villa. All rights reserved.</small>
+    </footer>
+    <!--footer section ends-->
+
+    <!--bootstrap js script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

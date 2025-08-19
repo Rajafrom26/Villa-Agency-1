@@ -1,0 +1,552 @@
+.main{
+  display: flex;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.navbar-brand{
+  font-size: min(2rem, 5vw);
+  font-weight: bold;
+}
+a.nav-link {
+  font-size: min(1rem, 4vw);
+  font-weight: bolder;
+}
+a.nav-link:hover {
+  color: #ff8000;
+}
+a.nav-link.active:hover {
+  color: #ff8000;
+}
+.btn:hover {
+  color: #ff8000;
+  background-color: black;
+}
+.text-black {
+  background-color: rgba(246, 106, 13, 0.3);
+  border-radius: 10px;
+  align-content: space-between;
+}
+.text-black h1{
+  color: orangered;
+}
+button.text-black{
+  font-weight: min(1.5rem, 4vw);
+}
+
+.text-over-Image {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
+  font-weight: bold;
+  
+}
+.home-banner {
+  position: absolute;
+  top: 37%;
+  left: 23.5%;
+  transform: translate(-50%, -50%);
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.bg-video-layer {
+  position: absolute;
+  top: 24%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+.bg-video-layer1 {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.bg-properties {
+  position: absolute;
+  top: 45%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.bg-properties-1 {
+  position: absolute;
+  top: 37%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: rgb(17, 15, 15);
+  background-color: white;
+  padding: 10px;
+}
+
+
+
+.card {
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.second {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  justify-content: center;
+}
+.third {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  align-items: center;
+}
+.fourth {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0 10px 20px;
+}
+.fifth {
+  display:grid;
+  width: 50%;
+  height: 75%;
+  margin: 20px 0 10px 0;
+  justify-content: start;
+}
+.card-body {
+  padding: 20px;
+}
+.accordion-button {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #e9ecef;
+}
+.accordion-item {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btn-dark {
+  border-radius: 50px;
+}
+.Schedule{
+  margin: -11px;
+}
+.properties {
+  margin-top: 100px;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+.btn-properties {
+  margin-top: 40px;
+  margin-bottom: auto;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.btn-properties:hover {
+  background-color: #ff8000;
+  color: white;
+}
+.card-pSecond{
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-contact {
+  width: 30%;
+  height: fit-content;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, 100%);
+  background: #ff4c2c;
+  color: #fff;
+  font-size: 30px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Mobile devices (≤576px) */
+@media (max-width: 576px) {
+  .main {
+    padding: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: min(1.5rem, 6vw);
+  }
+
+  a.nav-link {
+    font-size: min(0.9rem, 4.5vw);
+    margin: 0.25rem 0;
+  }
+
+  .text-black {
+    padding: 0.5rem;
+  }
+
+  .text-black h1 {
+    font-size: min(1.5rem, 5vw);
+  }
+
+  button.text-black {
+    font-weight: bold; /* Typo preserved */
+  }
+
+  .text-over-Image {
+    font-size: min(2rem, 7vw);
+    top: 40%;
+    left: 50%;
+  }
+
+  .home-banner {
+    font-size: min(1.2rem, 5vw);
+    top: 35%;
+    left: 50%;
+    padding: 0.5rem;
+  }
+
+  .bg-video-layer {
+    font-size: min(1.2rem, 5vw);
+    top: 20%;
+    left: 50%;
+    padding: 0.5rem;
+  }
+
+  .bg-video-layer1 {
+    font-size: min(1rem, 4vw);
+    top: 15%;
+    left: 50%;
+  }
+
+  .bg-properties {
+    font-size: min(1.2rem, 5vw);
+    top: 40%;
+    left: 50%;
+  }
+
+  .bg-properties-1 {
+    font-size: min(1.2rem, 5vw);
+    top: 35%;
+    left: 50%;
+    padding: 0.5rem;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 0.5rem auto;
+  }
+
+  .second {
+    margin: 0.5rem auto;
+  }
+
+  .third {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .fourth {
+    margin: 0.5rem;
+  }
+
+  .fifth {
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .accordion-button {
+    font-size: min(0.9rem, 4.5vw);
+  }
+
+  .accordion-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .btn-dark {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .Schedule {
+    margin: -0.5rem;
+  }
+
+  .properties {
+    margin-top: 3rem;
+  }
+
+  footer {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .btn-properties {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .card-pSecond {
+    max-width: 100%;
+    margin: 0.5rem auto;
+  }
+
+  .card-contact {
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  .play-btn {
+    width: 50px;
+    height: 50px;
+    font-size: min(1.2rem, 5vw);
+  }
+}
+
+/* Tablets (576px–768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .main {
+    padding: 0.5rem;
+  }
+
+  .navbar {
+    padding: 0.75rem;
+  }
+
+  .navbar-brand {
+    font-size: min(1.8rem, 5.5vw);
+  }
+
+  a.nav-link {
+    font-size: min(0.95rem, 4.2vw);
+  }
+
+  .text-black {
+    padding: 0.75rem;
+  }
+
+  .text-black h1 {
+    font-size: min(1.8rem, 5.5vw);
+  }
+
+  .text-over-Image {
+    font-size: min(2.5rem, 6.5vw);
+    top: 45%;
+    left: 50%;
+  }
+
+  .home-banner {
+    font-size: min(1.3rem, 4.5vw);
+    top: 35%;
+    left: 50%;
+    padding: 0.75rem;
+  }
+
+  .bg-video-layer {
+    font-size: min(1.3rem, 4.5vw);
+    top: 22%;
+    left: 50%;
+    padding: 0.75rem;
+  }
+
+  .bg-video-layer1 {
+    font-size: min(1.1rem, 4vw);
+    top: 15%;
+    left: 50%;
+  }
+
+  .bg-properties {
+    font-size: min(1.3rem, 4.5vw);
+    top: 40%;
+    left: 50%;
+  }
+
+  .bg-properties-1 {
+    font-size: min(1.3rem, 4.5vw);
+    top: 35%;
+    left: 50%;
+    padding: 0.75rem;
+  }
+
+  .card {
+    max-width: 80%;
+  }
+
+  .second {
+    margin: 0.75rem auto;
+  }
+
+  .third {
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+  }
+
+  .fourth {
+    margin: 0.75rem;
+  }
+
+  .fifth {
+    max-width: 75%;
+    margin: 0.75rem 0;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .accordion-button {
+    font-size: min(0.95rem, 4.2vw);
+  }
+
+  .btn-dark {
+    padding: 0.5rem 1rem;
+  }
+
+  .Schedule {
+    margin: -0.75rem;
+  }
+
+  .properties {
+    margin-top: 4rem;
+  }
+
+  footer {
+    padding: 1.5rem;
+  }
+
+  .btn-properties {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .card-pSecond {
+    max-width: 80%;
+  }
+
+  .card-contact {
+    max-width: 50%;
+  }
+
+  .play-btn {
+    width: 60px;
+    height: 60px;
+    font-size: min(1.3rem, 4.5vw);
+  }
+}
+
+/* Desktops (>768px) */
+@media (min-width: 769px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .navbar-brand {
+    font-size: min(2rem, 5vw);
+  }
+
+  a.nav-link {
+    font-size: min(1rem, 4vw);
+  }
+
+  .text-black {
+    padding: 1rem;
+  }
+
+  .text-black h1 {
+    font-size: min(2rem, 5vw);
+  }
+
+  .text-over-Image {
+    font-size: min(3rem, 6vw);
+  }
+
+  .home-banner {
+    font-size: min(1.5rem, 4vw);
+  }
+
+  .bg-video-layer {
+    font-size: min(1.5rem, 4vw);
+  }
+
+  .bg-video-layer1 {
+    font-size: min(1.2rem, 3.5vw);
+  }
+
+  .bg-properties {
+    font-size: min(1.5rem, 4vw);
+  }
+
+  .bg-properties-1 {
+    font-size: min(1.5rem, 4vw);
+  }
+
+  .card {
+    max-width: 600px;
+  }
+
+  .card-pSecond {
+    max-width: 400px;
+  }
+
+  .card-contact {
+    max-width: 30%;
+  }
+
+  .fifth {
+    max-width: 50%;
+  }
+}
