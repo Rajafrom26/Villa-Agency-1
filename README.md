@@ -9,9 +9,11 @@ Welcome to the Villa Agency project! This repository contains the source code fo
 - Property details page
 - Contact form for inquiries
 - Responsive design
+- Using Bootstrap frame work (fully)
 
 ## Getting Started
 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Rajafrom26/Villa-Agency-1.git
+
