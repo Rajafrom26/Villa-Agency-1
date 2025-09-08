@@ -26,6 +26,22 @@
   background-color: black;
 }
 /* navbar designation is compete */
+/* carrousel */
+.img-parent {
+  position: relative;
+}
+.text-parent {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+.small-text {
+  background-color: white;
+  padding: 5px;
+}
+#header-tag {
+  color: white;
+}
 
 /* in feauture propeties */
 .accordion-button {
@@ -188,6 +204,11 @@
 }
 /* end */
 /* overlay of iframe and form */
+.contact-text {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+}
 .parent-bg-img {
   height: 900px;
   overflow: hidden;
@@ -202,11 +223,11 @@
 }
 
 .iframe-img {
-  top: 50%;
+  top: 45%;
   left: 15%;
 }
 .form-sec {
-  top: 55%;
+  top: 50%;
   left: 60%;
 }
 @media only screen and (width: 1200px) {
