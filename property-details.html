@@ -18,31 +18,36 @@
     <link rel="stylesheet" href="./project.css" />
   </head>
   <body>
-    <div class="container main d-flex pt-4">
-      <p><i class="bi bi-envelope-fill text-danger"></i> info@gmail.com|</p>
+    <!-- main header section -->
+    <div class="container d-flex pt-4">
+      <p class="pe-4">
+        <i class="bi bi-envelope-fill text-danger pe-1"></i> info@gmail.com
+      </p>
       <p>
         <i class="bi bi-map-fill text-danger"></i> Sunny Isles Beach, FL 33160
       </p>
-      <div class="ms-auto social-icons">
-        <button type="button" class="btn btn-secondary rounded-circle">
+      <!-- social media icons -->
+      <div class="ms-auto">
+        <button type="button" class="btn btn-secondary rounded-circle icons">
           <i class="bi bi-facebook"></i>
         </button>
-        <button type="button" class="btn btn-secondary rounded-circle">
+        <button type="button" class="btn btn-secondary rounded-circle icons">
           <i class="bi bi-twitter"></i>
         </button>
-        <button type="button" class="btn btn-secondary rounded-circle">
+        <button type="button" class="btn btn-secondary rounded-circle icons">
           <i class="bi bi-linkedin"></i>
         </button>
-        <button type="button" class="btn btn-secondary rounded-circle">
+        <button type="button" class="btn btn-secondary rounded-circle icons">
           <i class="bi bi-instagram"></i>
         </button>
       </div>
     </div>
     <hr />
+    <!-- header section ended -->
     <!--navbar section-->
-    <nav class="navbar navbar-expand-lg pb-5 pt-3">
+    <nav class="navbar navbar-expand-lg pb-4">
       <div class="container">
-        <a class="navbar-brand" href="./Home.html" target="_self">VILLA</a>
+        <a class="navbar-brand fw-bold" href="./Home.html">VILLA</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -58,30 +63,27 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-2 me-2">
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link active villa"
                 aria-current="page"
                 href="./Home.html"
-                target="_self"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./properties.html" target="_self"
+              <a class="nav-link villa-1" href="./properties.html"
                 >Properties</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./property-details.html" target="_self"
+              <a class="nav-link villa-1" href="./property-details.html"
                 >Property Details</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html" target="_self"
-                >Contact Us</a
-              >
+              <a class="nav-link villa-1" href="./contact.html">Contact Us</a>
             </li>
             <li>
-              <button class="btn btn-dark p-2">
+              <button class="btn btn-dark p-2 schedule-btn">
                 <i
                   class="bi bi-calendar-fill Schedule p-2 me-3 bg-danger text-white rounded-circle"
                 ></i>
@@ -93,21 +95,23 @@
       </div>
     </nav>
     <!--navbar section ends-->
-    <div class="container-fluid">
-      <img
+    <!-- bg image -->
+    <div class="banner-card">
+        <img
         src="./images/page-heading-bg.jpg"
         class="img-fluid w-100 object-fit-cover"
         alt="Page Heading"
       />
-      <span class="bg-properties-1">Home/Property-Details</span>
-      <div class="bg-properties">
-        <h1>Property-Details</h1>
-      </div>
+        <div class="banner-text">
+            <h4>property-details</h4>
+        </div>
     </div>
+    <!-- bg image -->
+    <!-- property details -->
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="card-single mt-5 border-0 h-70 w-100 ms-0">
+      <div class="row m-5">
+        <div class="col-lg-7">
+          <div class="card">
             <img
               src="./images/property-01.jpg"
               class="card-img-top"
@@ -117,8 +121,11 @@
           <div class="card-body">
             <h5 class="card-title">
               <div class="row px-3 py-2">
-                <div class="col">Luxury Villa</div>
-                <div class="col text-end">$2.264.00</div>
+                <div class="col bg-pro" style="margin-right: 500px">
+                  Luxury Villa
+                </div>
+                <!--inline styling-->
+                <div class="col text-end test-color">$2.264.00</div>
               </div>
             </h5>
             <h5 class="fw-bold">18 New Street Miami, OR 97219</h5>
@@ -235,8 +242,11 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="card-pSecond m-5 h-53">
+        <div class="col-5">
+          <div
+            class="card best-card justify-content-center"
+            style="width: 400px; height: 450px"
+          >
             <ul class="list-group list-group-flush">
               <li class="list-group-item align-content-end">
                 <div class="row px-3 py-2">
@@ -275,103 +285,105 @@
         </div>
       </div>
     </div>
+    <!-- best deal session -->
     <div class="container-fluid bg-body-tertiary">
       <div class="container d-grid ms-auto pt-lg-5">
         <small class="text-danger ms-3">|Best Deal</small>
         <h1 class="text-dark ms-3">Find Your Best Deal</h1>
         <h1 class="text-dark ms-3">Right Now!</h1>
-        <div class="row justify-content-between m-auto me-0">
-          <div class="col-lg-sm-3">
-            <input
-              class="btn btn-properties px-3"
-              type="button"
-              value="Apartment"
-            />
-            <input
-              class="btn btn-properties px-3"
-              type="submit"
-              value="Villa House"
-            />
-            <input
-              class="btn btn-properties px-3"
-              type="reset"
-              value="Penthouse"
-            />
+
+        <!-- botton -->
+        <div class="row justify-content-evenly m-auto me-0">
+          <div class="col-lg-sm-3 mb-4">
+            <button class="btn btn-dark pro-btn">Apartment</button>
+            <button class="btn btn-dark pro-btn">Villa House</button>
+            <button class="btn btn-dark pro-btn">Penthouse</button>
           </div>
         </div>
       </div>
+      <!-- button ends -->
+
       <div class="container d-flex">
-        <div class="card third" style="width: 18rem">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item align-content-end">
-              <div class="row px-3 py-2">
-                <div class="col small">Total Flat Space</div>
-                <div class="col text-end fw-bold">185 m²</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row px-3 py-2">
-                <div class="col">Floor Number</div>
-                <div class="col text-end fw-bold">26th</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row px-3 py-2">
-                <div class="col">Number Of Rooms</div>
-                <div class="col text-end fw-bold">4</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row px-3 py-2">
-                <div class="col">Parking available</div>
-                <div class="col text-end fw-bold">Yes</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row px-3 py-2">
-                <div class="col">Payment Process</div>
-                <div class="col text-end fw-bold">Bank</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="card fourth">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="./images/deal-01.jpg"
-                class="img-fluid rounded-start"
-                alt="deal-01-img"
-              />
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card mb-3 best-card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item align-content-end">
+                  <div class="row px-3 py-2">
+                    <div class="col small">Total Flat Space</div>
+                    <div class="col text-end fw-bold">185 m²</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row px-3 py-2">
+                    <div class="col">Floor Number</div>
+                    <div class="col text-end fw-bold">26th</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row px-3 py-2">
+                    <div class="col">Number Of Rooms</div>
+                    <div class="col text-end fw-bold">4</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row px-3 py-2">
+                    <div class="col">Parking available</div>
+                    <div class="col text-end fw-bold">Yes</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row px-3 py-2">
+                    <div class="col">Payment Process</div>
+                    <div class="col text-end fw-bold">Bank</div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Extra Info About Property</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <br />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <button class="btn btn-dark p-2">
-                  <i
-                    class="bi bi-calendar-fill Schedule p-2 me-3 bg-danger text-white rounded-circle"
-                  ></i>
-                  Schedule a visit
-                </button>
+          </div>
+          <!-- card section is used as a fourth for designing -->
+          <div class="col-lg-9">
+            <div class="card fourth">
+              <div class="row">
+                <div class="col-6">
+                  <img
+                    src="./images/deal-01.jpg"
+                    class="img-fluid rounded-start"
+                    alt="deal-01-img"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Extra Info About Property</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button class="btn btn-dark p-2 schedule-btn">
+                      <i
+                        class="bi bi-calendar-fill Schedule p-2 me-3 bg-danger text-white rounded-circle"
+                      ></i>
+                      Schedule a visit
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- pagination -->
     <div class="container">
       <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center mt-5">

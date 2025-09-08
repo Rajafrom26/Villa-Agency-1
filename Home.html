@@ -15,27 +15,27 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <!--custom css stylesheet-->
-    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="./project.css" />
   </head>
   <body>
     <!-- main header section -->
-    <div class="container main d-flex pt-4">
-      <p><i class="bi bi-envelope-fill text-danger"></i> info@gmail.com|</p>
+    <div class="container d-flex pt-4">
+      <p class="pe-4"><i class="bi bi-envelope-fill text-danger pe-1"></i> info@gmail.com</p>
       <p>
         <i class="bi bi-map-fill text-danger"></i> Sunny Isles Beach, FL 33160
       </p>
       <!-- social media icons -->
-      <div class="ms-auto social-icons">
-        <button type="button" class="btn btn-secondary rounded-circle">
+      <div class="ms-auto">
+        <button type="button" class="btn btn-secondary rounded-circle icons">
           <i class="bi bi-facebook"></i>
         </button>
-        <button type="button" class="btn btn-secondary rounded-circle">
+        <button type="button" class="btn btn-secondary rounded-circle icons">
           <i class="bi bi-twitter"></i>
         </button>
-        <button type="button" class="btn btn-secondary rounded-circle">
+        <button type="button" class="btn btn-secondary rounded-circle icons">
           <i class="bi bi-linkedin"></i>
         </button>
-        <button type="button" class="btn btn-secondary rounded-circle">
+        <button type="button" class="btn btn-secondary rounded-circle icons">
           <i class="bi bi-instagram"></i>
         </button>
       </div>
@@ -43,9 +43,9 @@
     <hr />
     <!-- header section ended -->
     <!--navbar section-->
-    <nav class="navbar navbar-expand-lg pb-5 pt-3">
+    <nav class="navbar navbar-expand-lg pb-4">
       <div class="container">
-        <a class="navbar-brand" href="./Home.html">VILLA</a>
+        <a class="navbar-brand fw-bold" href="./Home.html">VILLA</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -60,23 +60,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-2 me-2">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./Home.html"
+              <a class="nav-link active villa" aria-current="page" href="./Home.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./properties.html">Properties</a>
+              <a class="nav-link villa-1" href="./properties.html">Properties</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./property-details.html"
+              <a class="nav-link villa-1" href="./property-details.html"
                 >Property Details</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact Us</a>
+              <a class="nav-link villa-1" href="./contact.html">Contact Us</a>
             </li>
             <li>
-              <button class="btn btn-dark p-2">
+              <button class="btn btn-dark p-2 schedule-btn">
                 <i
                   class="bi bi-calendar-fill Schedule p-2 me-3 bg-danger text-white rounded-circle"
                 ></i>
@@ -126,14 +126,6 @@
             class="d-block w-100"
             alt="banner-01"
           />
-          <span class="home-banner fw-bold">Toronto, Canada</span>
-          <div class="text-over-Image">
-            <h1>
-              HURRY!<br />
-              GET THE<br />
-              BEST VILLA FOR YOU
-            </h1>
-          </div>
         </div>
         <div class="carousel-item">
           <img
@@ -141,14 +133,6 @@
             class="d-block w-100"
             alt="banner-02"
           />
-          <span class="home-banner fw-bold">Toronto, Canada</span>
-          <div class="text-over-Image">
-            <h1>
-              HURRY!<br />
-              GET THE<br />
-              BEST VILLA FOR YOU
-            </h1>
-          </div>
         </div>
         <div class="carousel-item">
           <img
@@ -156,14 +140,6 @@
             class="d-block w-100"
             alt="banner-03"
           />
-          <span class="home-banner fw-bold">Toronto, Canada</span>
-          <div class="text-over-Image">
-            <h1>
-              HURRY!<br />
-              GET THE<br />
-              BEST VILLA FOR YOU
-            </h1>
-          </div>
         </div>
       </div>
       <button
@@ -187,10 +163,12 @@
     </div>
     <!--carousel section ends-->
     <!--featured properties section-->
-    <div class="container d-flex">
+    <div class="container d-lg-flex">
+      <div class="row">
+        <div class="col-lg-9">
       <div class="card first m-4 border-0 p-lg-3">
-        <div class="row g-0">
-          <div class="col-md-4">
+        <div class="row">
+          <div class="col-4">
             <img
               src="./images/featured.jpg
             "
@@ -198,7 +176,7 @@
               alt="featured-img"
             />
           </div>
-          <div class="col-md-8">
+          <div class="col-8">
             <div class="card-body">
               <h5 class="card-title">
                 <small class="text-danger d-grid">|Featured</small> Best
@@ -227,12 +205,6 @@
                       <strong>This is the first item’s accordion body.</strong>
                       It is shown by default, until the collapse plugin adds the
                       appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It’s also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
                     </div>
                   </div>
                 </div>
@@ -257,12 +229,6 @@
                       <strong>This is the second item’s accordion body.</strong>
                       It is hidden by default, until the collapse plugin adds
                       the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It’s also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
                     </div>
                   </div>
                 </div>
@@ -287,12 +253,6 @@
                       <strong>This is the third item's accordion body.</strong>
                       It is hidden by default, until the collapse plugin adds
                       the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It’s also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
                     </div>
                   </div>
                 </div>
@@ -301,10 +261,12 @@
           </div>
         </div>
       </div>
+      </div>
       <!-- card section is used as second card -->
-      <div class="card Second">
+       <div class="col-lg-3">
+      <div class="card best-card mt-lg-5 mb-4 justify-content-center" style="width: 400px; height: 350px;">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item align-content-end">
+          <li class="list-group-item">
             <div class="row">
               <div class="col"><img src="./images/info-icon-01.png" /></div>
               <div class="col text-end">
@@ -336,83 +298,71 @@
           </li>
         </ul>
       </div>
+      </div>
+      </div>
     </div>
     <!--featured properties section ends-->
+
+
     <!--overlayed image using position-->
-    <div class="container-fluid">
-      <!-- video background Image -->
-      <div class="img-overlay-1 position-relative">
-        <img
-          src="./images/video-bg.jpg"
-          class="img-fluid w-100 h-100 object-fit-cover"
-          alt="Background"
-        />
-        <span class="bg-video-layer1 text-danger small">|video View</span>
-        <div class="bg-video-layer">
-          <h1>
-            Get Closer View &
-            <br />
-            Different Feeling
-          </h1>
+    <div class="container-fluid hieght">
+    <div class="parent-img">
+        <img src="/images/video-bg.jpg" class="w-100 h-100" alt="parent-img">
+        <div class="parent-txt">
+            <span class="small text-danger video">|video View</span>
+           <span class="font">Get Closer View & <br/> Different Feeling</span>
         </div>
-        <!-- positional content -->
-        <img
-          src="./images/video-frame.jpg"
-          class="position-relative top-50 start-50 translate-middle w-50"
-          alt="Overlay"
-        />
-        <i class="bi bi-play-circle play-btn"></i>
-      </div>
+        <div class="child-img">
+            <img src="/images/video-frame.jpg" alt="video-frame">
+            <div class="child-icon">
+                <i class="bi bi-play-circle"></i>
+            </div>
+        </div>
+    </div>
     </div>
     <!--overlayed image using position ends-->
+
     <!--badges section-->
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-lg-3">
-          <!-- text type buttons used as badges -->
-          <button
-            type="button"
-            class="text-black px-5 position-relative align-items-center d-flex justify-content-evenly mb-5"
-          >
-            <h1>34</h1>
-            Buildings<br />Finished now
-            <span
-              class="position-absolute top-0 start-100 translate-middle p-3 bg-danger border border-light rounded-circle"
-            >
-              <span class="visually-hidden">New alerts</span>
-            </span>
-          </button>
-        </div>
-        <div class="col-lg-3">
-          <button
-            type="button"
-            class="text-black px-5 position-relative align-items-center d-flex justify-content-evenly mb-2"
-          >
-            <h1>12</h1>
-            Years<br />Experience
-            <span
-              class="position-absolute top-0 start-100 translate-middle p-3 bg-danger border border-light rounded-circle"
-            >
-              <span class="visually-hidden">New alerts</span>
-            </span>
-          </button>
-        </div>
-        <div class="col-lg-3">
-          <button
-            type="button"
-            class="text-black px-5 position-relative align-items-center d-flex justify-content-evenly mb-2"
-          >
-            <h1>24</h1>
-            Awards<br />Won
-            <span
-              class="position-absolute top-0 start-100 translate-middle p-3 bg-danger border border-light rounded-circle"
-            >
-              <span class="visually-hidden">New alerts</span>
-            </span>
-          </button>
-        </div>
+     <div class="container badges">
+    <div class="row">
+      <div class="col-4">
+    <div class="metric-box">
+      <div class="metric-number">34</div>
+      <div class="metric-label">
+        Buildings <br />
+        Finished Now
       </div>
+      <span
+        class="position-absolute top-0 start-100 translate-middle p-3 border border-light rounded-circle circle"
+      ></span>
     </div>
+    </div>
+    <div class="col-4">
+    <div class="metric-box">
+      <div class="metric-number">12</div>
+      <div class="metric-label">
+        Years <br />
+        Experience
+      </div>
+      <span
+        class="position-absolute top-0 start-100 translate-middle p-3 border border-light rounded-circle circle"
+      ></span>
+    </div>
+    </div>
+    <div class="col-4">
+    <div class="metric-box">
+      <div class="metric-number">24</div>
+      <div class="metric-label">
+        Awards <br />
+        won 2023
+      </div>
+      <span
+        class="position-absolute top-0 start-100 translate-middle p-3 border border-light rounded-circle circle"
+      ></span>
+    </div>
+    </div>
+  </div>
+  </div>
     <!--badges section ends-->
     <!--best deal section-->
     <div class="container-fluid bg-body-tertiary">
@@ -420,29 +370,22 @@
         <small class="text-danger ms-3">|Best Deal</small>
         <h1 class="text-dark ms-3">Find Your Best Deal</h1>
         <h1 class="text-dark ms-3">Right Now!</h1>
-        <div class="row justify-content-between m-auto me-0">
-          <div class="col-lg-sm-3">
-            <input
-              class="btn btn-properties px-3"
-              type="button"
-              value="Apartment"
-            />
-            <input
-              class="btn btn-properties px-3"
-              type="submit"
-              value="Villa House"
-            />
-            <input
-              class="btn btn-properties px-3"
-              type="reset"
-              value="Penthouse"
-            />
+
+        <!-- botton -->
+        <div class="row justify-content-evenly m-auto me-0">
+          <div class="col-lg-sm-3 mb-4">
+            <button class="btn btn-dark pro-btn">Apartment</button>
+            <button class="btn btn-dark pro-btn">Villa House</button>
+            <button class="btn btn-dark pro-btn">Penthouse</button>
           </div>
         </div>
       </div>
+      <!-- button ends -->
+
       <div class="container d-flex">
-        <!-- card section is used as a third for designing -->
-        <div class="card third" style="width: 18rem">
+        <div class="row">
+          <div class="col-lg-3">
+        <div class="card mb-3 best-card">
           <ul class="list-group list-group-flush">
             <li class="list-group-item align-content-end">
               <div class="row px-3 py-2">
@@ -476,17 +419,19 @@
             </li>
           </ul>
         </div>
+        </div>
         <!-- card section is used as a fourth for designing -->
+        <div class="col-lg-9">
         <div class="card fourth">
-          <div class="row g-0">
-            <div class="col-md-4">
+          <div class="row">
+            <div class="col-6">
               <img
                 src="./images/deal-01.jpg"
                 class="img-fluid rounded-start"
                 alt="deal-01-img"
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-lg-6">
               <div class="card-body">
                 <h5 class="card-title">Extra Info About Property</h5>
                 <p class="card-text">
@@ -502,7 +447,7 @@
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <button class="btn btn-dark p-2">
+                <button class="btn btn-dark p-2 schedule-btn">
                   <i
                     class="bi bi-calendar-fill Schedule p-2 me-3 bg-danger text-white rounded-circle"
                   ></i>
@@ -512,19 +457,21 @@
             </div>
           </div>
         </div>
+        </div>
+        </div>
       </div>
     </div>
     <!--best deal section ends-->
     <!--properties section-->
-    <div class="container properties">
+    <div class="container pt-5">
       <div class="text-center text-danger">|PROPERTIES</div>
       <h1 class="fs-bold text-center">
         We Provide The Best <br />
         Property You Like
       </h1>
       <!-- bootstrap card sectoin will help -->
-      <div class="row row-cols-2 row-cols-md-3 g-4">
-        <div class="col">
+      <div class="row g-4">
+        <div class="col-lg-4 col-12">
           <div class="card h-100">
             <img
               src="./images/property-01.jpg"
@@ -535,8 +482,8 @@
             <div class="card-body">
               <h5 class="card-title">
                 <div class="row px-3 py-2">
-                  <div class="col">Luxury Villa</div>
-                  <div class="col text-end">$2.264.00</div>
+                  <div class="col bg-pro">Luxury Villa</div>
+                  <div class="col text-end test-color">$2.264.00</div>
                 </div>
               </h5>
               <h5 class="fw-bold">18 New Street Miami, OR 97219</h5>
@@ -549,13 +496,13 @@
               </p>
             </div>
             <div class="card-footer w-100 text-center">
-              <button type="button" class="btn btn-dark">
+              <button type="button" class="btn btn-dark pro-btn">
                 Schedule a visit
               </button>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-4 col-12">
           <div class="card h-100">
             <img
               src="./images/property-02.jpg"
@@ -566,8 +513,8 @@
             <div class="card-body">
               <h5 class="card-title">
                 <div class="row px-3 py-2">
-                  <div class="col">Luxury Villa</div>
-                  <div class="col text-end">$1.180.000</div>
+                  <div class="col bg-pro">Luxury Villa</div>
+                  <div class="col text-end test-color">$1.180.000</div>
                 </div>
               </h5>
               <h5 class="fw-bold">54 Mid Street Florida, OR 27001</h5>
@@ -580,13 +527,13 @@
               </p>
             </div>
             <div class="card-footer w-100 text-center">
-              <button type="button" class="btn btn-dark">
+              <button type="button" class="btn btn-dark pro-btn">
                 Schedule a visit
               </button>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-4 col-12">
           <div class="card h-100">
             <img
               src="./images/property-03.jpg"
@@ -597,8 +544,8 @@
             <div class="card-body">
               <h5 class="card-title">
                 <div class="row px-3 py-2">
-                  <div class="col">Luxury Villa</div>
-                  <div class="col text-end">$1.460.00</div>
+                  <div class="col bg-pro">Luxury Villa</div>
+                  <div class="col text-end test-color">$1.460.00</div>
                 </div>
               </h5>
               <h5 class="fw-bold">26 Old Street Miami, Or 38540</h5>
@@ -611,13 +558,13 @@
               </p>
             </div>
             <div class="card-footer w-100 text-center">
-              <button type="button" class="btn btn-dark">
+              <button type="button" class="btn btn-dark pro-btn">
                 Schedule a visit
               </button>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-4 col-12">
           <div class="card h-100">
             <img
               src="./images/property-04.jpg"
@@ -628,8 +575,8 @@
             <div class="card-body">
               <h5 class="card-title">
                 <div class="row px-3 py-2">
-                  <div class="col">Apartment</div>
-                  <div class="col text-end">$584.500</div>
+                  <div class="col bg-pro">Apartment</div>
+                  <div class="col text-end test-color">$584.500</div>
                 </div>
               </h5>
               <h5 class="fw-bold">12 New Street Miami, OR 12650</h5>
@@ -642,13 +589,13 @@
               </p>
             </div>
             <div class="card-footer w-100 text-center">
-              <button type="button" class="btn btn-dark">
+              <button type="button" class="btn btn-dark pro-btn">
                 Schedule a visit
               </button>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-4 col-12">
           <div class="card h-100">
             <img
               src="./images/property-05.jpg"
@@ -659,8 +606,8 @@
             <div class="card-body">
               <h5 class="card-title">
                 <div class="row px-3 py-2">
-                  <div class="col">Penthouse</div>
-                  <div class="col text-end">$925.00</div>
+                  <div class="col bg-pro">Penthouse</div>
+                  <div class="col text-end test-color">$925.00</div>
                 </div>
               </h5>
               <h5 class="fw-bold">34 Beach Street Miami OR 42680</h5>
@@ -673,13 +620,13 @@
               </p>
             </div>
             <div class="card-footer w-100 text-center">
-              <button type="button" class="btn btn-dark">
+              <button class="btn btn-dark pro-btn">
                 Schedule a visit
               </button>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-4 col-12">
           <div class="card h-100">
             <img
               src="./images/property-06.jpg"
@@ -690,8 +637,8 @@
             <div class="card-body">
               <h5 class="card-title">
                 <div class="row px-3 py-2">
-                  <div class="col">Modern Condo</div>
-                  <div class="col text-end">$450.000</div>
+                  <div class="col bg-pro-1">Modern Condo</div>
+                  <div class="col text-end test-color">$450.000</div>
                 </div>
               </h5>
               <h5 class="fw-bold">22 New Street Portland, OR 16540</h5>
@@ -704,7 +651,7 @@
               </p>
             </div>
             <div class="card-footer w-100 text-center">
-              <button type="button" class="btn btn-dark">
+              <button type="button" class="btn btn-dark pro-btn">
                 Schedule a visit
               </button>
             </div>
@@ -714,43 +661,24 @@
     </div>
     <!--properties section ends-->
     <!--Iframe and contact form section starts-->
-    <div class="overlay-form-map position-relative min-vh-100">
-      <img
-        src="./images/contact-bg.jpg"
-        class="w-100 h-100 object-fit-cover mt-5"
-        alt="backgroung-map"
-      />
-      <span class="bg-video-layer1 text-danger small">|contact us</span>
-      <div class="bg-video-layer">
-        <h1>
-          Get In Touch With
-          <br />
-          our Agents
-        </h1>
+    <div class="container-fluid mt-5">
+        <div class="parent-bg-img position-relative">
+      <img src="/images/contact-bg.jpg" />
+      <div class="iframe-img position-absolute">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28703.04843206852!2d-80.1445141788599!3d25.939130085897173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9acfee073549d%3A0xf4e74db7a5da487a!2zU3VubnkgSXNsZXMgQmVhY2gsIOCwq-CxjeCwsuCxi-CwsOCwv-CwoeCwviAzMzE2MCwg4LCv4LGB4LCo4LGG4LGW4LCf4LGG4LCh4LGNIOCwuOCxjeCwn-Cxh-Cwn-CxjeCwuOCxjQ!5e0!3m2!1ste!2sin!4v1757320229293!5m2!1ste!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
-      <div class="container">
-        <div class="row d-flex gap-5 justify-content-center">
-          <div class="col-6 pt-3">
-            <!-- Google Maps iframe -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.843912203767!2d-80.12135612455047!3d25.95247787723254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1ste!2sin!4v1755452419084!5m2!1ste!2sin"
-              id="map"
-              class="position-relative top-30 start-50 translate-middle map"
-              height="85%"
-              width="100%"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div
-            class="col-4 bg-white position-relative top-50 start-10 mt-5 h-50 translate-middle-y p-4 rounded shadow form"
-          >
-            <h3 class="mb-3 text-dark">Contact Us</h3>
-            <!-- form control in position -->
-            <form>
+      <div class="form-sec position-absolute">
+        <form class="Contact-form-home">
               <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
+                <label for="name" class="form-label">FullName</label>
                 <input
                   type="text"
                   class="form-control"
@@ -760,7 +688,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label">Email Adress</label>
                 <input
                   type="email"
                   class="form-control"
@@ -779,19 +707,18 @@
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-dark w-100">
+              <button type="submit" class="btn btn-dark pro-btn">
                 Send Message
               </button>
             </form>
-          </div>
-        </div>
       </div>
-    </div>
+      </div>
+      </div>
     <!--Iframe and contact form section ends-->
     <!--contact badges section starts-->
     <div class="container contact-information">
-      <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="row mt-5">
+        <div class="col-3">
           <!-- card section is used as a fifth for designing -->
           <div class="card fifth">
             <div class="card-body d-flex align-items-center">
@@ -804,7 +731,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-3">
           <!-- card section is used as a fifth for designing -->
           <div class="card fifth">
             <div class="card-body d-flex align-items-center">
